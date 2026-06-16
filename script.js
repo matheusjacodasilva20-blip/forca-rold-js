@@ -20,3 +20,14 @@ for(let i = 0; i < palavra.length; i++){
 }
 
 document.body.innerHTML += `<p>${exibicao}</p>`;
+
+function jogar(){
+
+    const letra =
+        document.getElementById("letra")
+        .value
+        .toUpperCase();
+
+    document.getElementById("resultado")
+        .innerText = `Você digitou: ${letra}`;
+}
