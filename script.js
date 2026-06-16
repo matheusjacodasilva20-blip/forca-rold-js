@@ -12,3 +12,11 @@ const palavra =
     palavras[Math.floor(Math.random() * palavras.length)];
 
 console.log(palavra);
+
+let exibicao = "";
+
+for(let i = 0; i < palavra.length; i++){
+    exibicao += "_ ";
+}
+
+document.body.innerHTML += `<p>${exibicao}</p>`;
