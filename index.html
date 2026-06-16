@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Forca JS</title>
+    <meta charset="UTF-8">
+    <title>Jogo da Forca JS</title>
 </head>
 <body>
 
     <h1>Jogo da Forca</h1>
 
+    <p id="palavra"></p>
+
+    <p>
+        Digite uma letra:
+        <input type="text" id="letra" maxlength="1">
+        <button onclick="jogar()">Enviar</button>
+    </p>
+
+    <p id="tentativas"></p>
+
+    <p id="usadas"></p>
+
+    <p id="mensagem"></p>
+
+    <button onclick="novoJogo()">Novo Jogo</button>
+
     <script src="script.js"></script>
-
-    <input id="letra" maxlength="1">
-<button onclick="jogar()">Enviar</button>
-
-<p id="resultado"></p>
 
 </body>
 </html>
-
